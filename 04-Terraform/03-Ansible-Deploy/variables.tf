@@ -1,5 +1,5 @@
 variable "key_name" {
-  default = "hyudu"
+  default = "hyndu"
 }
 
 variable "pvt_key" {
@@ -11,5 +11,5 @@ variable "us-east-zones" {
 }
 
 variable "sg-id" {
-  default = "sg-0db49dfc9e9e10923"
+  default = "sg-02d03b519d6f4b569"
 }
