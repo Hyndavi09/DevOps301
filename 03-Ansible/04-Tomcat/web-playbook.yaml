@@ -35,4 +35,4 @@
 
   handlers:
   - name: Restart Tomcat
-    shell: "sh /opt/SP/apps/tomcat/bin/catalina.sh start" 
+    shell: "nohup sh /opt/SP/apps/tomcat/bin/catalina.sh start" 
