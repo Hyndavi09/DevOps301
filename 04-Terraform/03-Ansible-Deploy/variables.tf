@@ -1,15 +1,15 @@
 variable "key_name" {
-  default = "hyudu"
+  default = "hyndavi"
 }
 
 variable "pvt_key" {
-  default = "/root/.ssh/mykey.pem"
+  default = "/root/.ssh/hyndavi.pem"
 }
 
 variable "us-east-zones" {
-  default = ["us-east-1a", "us-east-1b"]
+  default = ["us-east-1"]
 }
 
 variable "sg-id" {
-  default = "sg-0db49dfc9e9e10923"
+  default = "sg-02d03b519d6f4b569"
 }

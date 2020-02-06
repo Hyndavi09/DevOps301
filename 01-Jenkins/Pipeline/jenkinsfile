@@ -4,7 +4,7 @@ node {
 
      
   stage('Git-Checkout') {
-   git 'https://github.com/amitvashisttech/mindtree-devops-30Jan2020.git'
+   git 'https://github.com/Hyndavi09/DevOps301.git'
   }
     
  def project_path="01-Jenkins/Code/petclinic"
@@ -18,7 +18,11 @@ node {
  stage('Maven-Compile') {
    sh label: '', script: 'mvn compile'
   }
-  
+   stage('Sonar Analysis'){
+        withSonarQubeEnv('SonarQube'){
+         sh 'mvn sonar:sonar'
+        }
+        }
    stage('Maven-Test') {
    sh label: '', script: 'mvn test'
   }
