@@ -7,7 +7,7 @@ node {
    git 'https://github.com/Hyndavi09/DevOps301.git'
   }
     
- def project_path="01-Jenkins/Code/petclinic"
+ def project_path="01-Jenkins/Code/Travelmanagement"
  
  dir(project_path) {
     
